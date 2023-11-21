@@ -1,0 +1,72 @@
+#path5 {
+  opacity: 0;
+  animation: opactTo1 0.5s forwards;
+}
+#path4 {
+  opacity: 0;
+  animation: opactTo1 0.5s forwards;
+  animation-delay: 0.5s;
+}
+#path6 {
+  opacity: 0;
+  animation: animatePath6 0.5s forwards;
+  animation-delay: 1s;
+}
+#path3 {
+  opacity: 0;
+  animation: animatePath3 0.5s forwards;
+  animation-delay: 1s;
+}
+#path2 {
+  opacity: 0;
+  animation: opactTo1 0.5s forwards;
+  animation-delay: 0.5s;
+}
+#path1 {
+  opacity: 0;
+  animation: opactTo1 0.5s forwards;
+}
+#logoSvg {
+  animation: putToUp 0.5s forwards;
+  animation-delay: 1.8s;
+}
+@keyframes animatePath6 {
+  0% {
+    transform: scaleX(0);
+    transform-origin: right;
+    opacity: 0;
+  }
+
+  100% {
+    transform: scaleX(1);
+    transform-origin: right;
+    opacity: 1;
+  }
+}
+@keyframes animatePath3 {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+    opacity: 0;
+  }
+
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+    opacity: 1;
+  }
+}
+@keyframes opactTo1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes putToUp {
+  100% {
+    opacity: 0;
+    transform: translateY(-420%);
+  }
+}

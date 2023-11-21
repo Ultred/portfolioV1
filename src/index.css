@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Calibre Regular";
+  src: url(fonts/CalibreRegular.otf);
+}
+@font-face {
+  font-family: "Calibre Medium";
+  src: url(fonts/CalibreMedium.otf);
+}
+@font-face {
+  font-family: "Calibre SemiBold ";
+  src: url(fonts/CalibreSemibold.otf);
+}
+@font-face {
+  font-family: "Courier Italic";
+  src: url(fonts/CourierPrime-Italic.ttf);
+}
+@font-face {
+  font-family: "Courier Regular";
+  src: url(fonts/CourierPrime-Regular.ttf);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #181817;
+  overflow-x: hidden !important;
+}
+section {
+  margin-top: 120px;
+}
+.mainButton {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  line-height: 14px;
+  color: #cfca16;
+  border: 2px solid #cfca16;
+  padding: 1.17rem 1.333rem 1.333rem 1.333rem;
+  cursor: pointer;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s color;
+}
+.mainButton:hover {
+  color: white;
+}
+.bordereaze {
+  border: 2px solid #cfca16;
+  border-radius: 5px;
+}
+.shadowcustom {
+  box-shadow: 5px 7px 19px 6px rgba(0, 0, 0, 0.64);
+}
+
+.button-background {
+  z-index: -10;
+  background-color: #cfca16;
+  position: absolute;
+  width: 0;
+  height: 110%;
+  top: 0;
+  left: 0;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s width;
+}
+
+.textmainh1 {
+  position: relative;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-bottom: 4rem;
+}
+
+.textmainh1::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 65%;
+  max-width: 400px;
+  background-color: #cfca16;
+  right: 8rem;
+  top: 33%;
+}
+.textmainh1.right::after {
+  left: 7rem;
+  right: 0;
+  top: 33%;
+}
+.textmainh1.contact::after {
+  right: 9rem;
+}
+.textmainh1.none {
+  margin-bottom: 1.5rem;
+}
+.textmainh1.none::after {
+  content: none;
+}
+.boxafter {
+  z-index: -10;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid #cfca16;
+  position: absolute;
+  width: 330px;
+  height: 440px;
+  top: -27px;
+  left: 48px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s border,
+    cubic-bezier(0.075, 0.82, 0.165, 1) 1s transform;
+}
+.hoverimg:hover + .boxafter {
+  border: 2px solid white;
+  transform: rotateZ(45deg);
+}
+.hoverimg {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s transform;
+}
+.hoverimg:hover {
+  transform: translateX(40px);
+}
+/* Section 4 */
+.imgproject > .viewmore {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s opacity,
+    cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s width;
+  opacity: 0;
+}
+.imgproject:hover > .viewmore {
+  opacity: 1;
+}
+/* Custom Hover Effect */
+.mainButton:hover .button-background {
+  width: 110%;
+}
+.hoverimg:hover + .boxafter .button-background {
+  width: 110%;
+}
+/* Navbar */
+.navbar {
+  width: 100%;
+  z-index: 20;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s transform;
+}
+.navbar.active {
+  transform: translateY(0px);
+}
+.navbar.up {
+  transform: translateY(calc(70px * -1));
+}
+/* Hamburger Menu */
+
+.div-hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.div-hamburger span {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s all;
+}
+
+.div-hamburger.open span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.div-hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.div-hamburger.open span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+/* Hamburger Effect */
+.effectonly {
+  transform: translateX(-101%);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s transform;
+}
+.effectonly.active {
+  transform: translateX(230%);
+}
+/* Dot Mouse  */
+.dotcustom {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s left,
+    cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s top;
+  box-shadow: #cfca16 15px 17px 29px 16px;
+}
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cfca16;
+}
+
+* {
+  scrollbar-color: #cfca16 #f5f5f5;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #cfca16 #f5f5f5;
+}
+
+@media screen and (max-width: 768px) {
+  .textmainh1::after {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .boxafter {
+    width: 241px;
+  }
+}
