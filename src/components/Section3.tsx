@@ -32,7 +32,10 @@ function Section3() {
     { icon: <PiFigmaLogoDuotone />, name: "Figma" },
   ];
   return (
-    <section className="pt-24 relative overflow-hidden" id="skills">
+    <section
+      className="initial-move pt-24 relative overflow-hidden"
+      id="skills"
+    >
       <div className="absolute z-[-10] bottom-[-3rem] right-[-10rem]">
         <img
           className="w-[30rem] h-[30rem]"

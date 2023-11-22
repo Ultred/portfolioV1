@@ -191,6 +191,11 @@ section {
     cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s top;
   box-shadow: #cfca16 15px 17px 29px 16px;
 }
+/* Initial movement Gsap */
+.initial-move {
+  opacity: 0;
+  transform: translate(0px, 50px);
+}
 /* For WebKit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
   width: 4px;

@@ -1,10 +1,32 @@
 import { FiExternalLink } from "react-icons/fi";
 import { BiLogoGithub, BiShowAlt } from "react-icons/bi";
 import { projects } from "../data/allData";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useEffect } from "react";
+
+function projectAnimate(name: string) {
+  gsap.to(`#${name}`, {
+    scrollTrigger: {
+      trigger: `#${name}`,
+      start: "30px 90%",
+    },
+    y: 0,
+    opacity: 1,
+    duration: 2,
+    ease: "power4.out",
+  });
+}
 
 function Section4() {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    projects.map((projIdName) => {
+      return projectAnimate(projIdName.idName);
+    });
+  }, []);
   return (
-    <section className="pt-24" id="projects">
+    <section className="pt-24 " id="projects">
       <h2 className="font-calibreSemBold  text-colorWhite-0 textmainh1 text-center none">
         Featured Projects
       </h2>
@@ -13,7 +35,7 @@ function Section4() {
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-32  items-center pr-10 border-r-2 border-r-colorYellow-0 border-solid gap-16 lg:gap-28 py-4">
         {projects.map((proj) => (
-          <>
+          <div className="initial-move" id={proj.idName} key={proj.id}>
             <a target="_blank" href={proj.links.external}>
               <div className="relative imgproject">
                 <img
@@ -30,7 +52,7 @@ function Section4() {
                 </div>
               </div>
             </a>
-            <div className="text-colorWhite-0 text-right">
+            <div className="text-colorWhite-0 mt-8 text-right">
               <h3 className="font-calibreSemBold textmainh1 none">
                 {proj.title}
               </h3>
@@ -51,7 +73,7 @@ function Section4() {
                 </a>
               </div>
             </div>
-          </>
+          </div>
         ))}
       </div>
     </section>

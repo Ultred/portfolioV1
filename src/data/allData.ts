@@ -2,6 +2,7 @@
 export const projects = [
   {
     id: 1,
+    idName: "tents",
     title: "TENTS",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex",
@@ -14,6 +15,7 @@ export const projects = [
   },
   {
     id: 2,
+    idName: "coraleccomerce",
     title: "Coral Eccomerce",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex",
@@ -33,6 +35,7 @@ export const projects = [
   },
   {
     id: 3,
+    idName: "tastequest",
     title: "Taste Quest",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex",
@@ -51,6 +54,7 @@ export const projects = [
   },
   {
     id: 4,
+    idName: "leftyclone",
     title: "Lefty Clone",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex",
@@ -65,6 +69,7 @@ export const projects = [
 
 export type Projecttype = {
   id: number;
+  idName: string;
   title: string;
   description: string;
   technologies: string[];

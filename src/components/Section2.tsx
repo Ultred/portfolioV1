@@ -1,9 +1,10 @@
 import { FiArrowUpRight } from "react-icons/fi";
+
 function Section2() {
   return (
     <section
       id="about"
-      className="grid items-center containermid grid-cols-1 lg:gap-4 gap-40  lg:grid-cols-2 pt-24"
+      className="initial-move grid items-center containermid grid-cols-1 lg:gap-4 gap-40  lg:grid-cols-2 pt-24"
     >
       <div className="relative mx-auto lg:mx-0 order-last lg:order-first">
         <img
