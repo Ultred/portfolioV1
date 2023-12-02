@@ -1,6 +1,14 @@
 import Button from "./Button";
-
+import { GiHand } from "react-icons/gi";
 function Section5() {
+  const handleEmailSend = () => {
+    const email = "vincentvinuya33@gmail.com";
+    const body = "Hello ^_^";
+
+    const mailtoLink = `mailto:${email}?body=${encodeURIComponent(body)}`;
+
+    window.open(mailtoLink, "_blank");
+  };
   return (
     <section
       id="contact"
@@ -18,15 +26,14 @@ function Section5() {
           <h2 className="font-calibreSemBold">Contact Me</h2>
         </div>
         <p className="text-justify font-calibreReg md:text-xl text-base mb-12">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Hello there! If you believe I'm qualified for the company or have a
+          project in mind, I'd love to hear from you. Feel free to reach out for
+          collaboration, inquiries, or just to say hi!
+          <span className="inline-block text-colorYellow-0 ml-3 shake-animation">
+            <GiHand />
+          </span>
         </p>
-        <Button text={"Send me an Email"} />
+        <Button onClick={() => handleEmailSend()} text={"Send me an Email"} />
       </div>
     </section>
   );

@@ -6,12 +6,12 @@ import {
   BiLogoJavascript,
   BiLogoReact,
   BiLogoTypescript,
-  BiLogoPhp,
   BiLogoGit,
   BiLogoGithub,
 } from "react-icons/bi";
 import { GrMysql } from "react-icons/gr";
 import { PiFigmaLogoDuotone } from "react-icons/pi";
+import { FaNode } from "react-icons/fa6";
 function Section3() {
   const [hoveredIcon, setHoveredIcon] = useState<string | null>("default");
   const frontEndData = [
@@ -23,7 +23,7 @@ function Section3() {
     { icon: <BiLogoTypescript />, name: "TypeScript" },
   ];
   const backEndData = [
-    { icon: <BiLogoPhp />, name: "PHP" },
+    { icon: <FaNode />, name: "Nodejs" },
     { icon: <GrMysql />, name: "MySql" },
   ];
   const othersData = [
