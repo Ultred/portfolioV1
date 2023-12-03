@@ -27,7 +27,7 @@ export const projects = [
       "Nodejs",
     ],
     links: {
-      external: "https://eccomerce-proj.vercel.app",
+      external: "https://coral-eccomerce-client.vercel.app/",
       github: "https://github.com/Ultred/Ultred-Coral-Eccomerce",
     },
     imagePath: "/picture/Coral.webp",
