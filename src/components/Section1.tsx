@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Button from "./Button";
+import resume from "/Vincent_Vinuya_Resume.pdf";
 
 function Section1() {
   const sectionRef = useRef(null);
@@ -33,7 +34,9 @@ function Section1() {
         I have a passion for turning coffee into code, brewing innovation one
         line at a time. Let's bring your ideas to life!
       </p>
-      <Button text={"Check my Resume"} />
+      <a href={resume} download={resume}>
+        <Button text={"Check my Resume"} />
+      </a>
     </section>
   );
 }
