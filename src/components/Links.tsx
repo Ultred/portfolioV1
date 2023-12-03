@@ -14,7 +14,7 @@ function Links() {
     { icon: <BiLogoGithub />, link: "https://github.com/Ultred" },
     {
       icon: <BiLogoLinkedinSquare />,
-      link: "https://www.linkedin.com/in/vincent-vinuya-507039254/",
+      link: "https://www.linkedin.com/in/vincentvinuya33",
     },
   ];
 

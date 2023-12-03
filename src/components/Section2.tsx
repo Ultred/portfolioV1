@@ -12,7 +12,7 @@ function Section2() {
       <div className="relative mx-auto lg:mx-0 order-last lg:order-first">
         <img
           className="w-[350px] h-[390px] rounded-md hoverimg"
-          src="/aboutme.jpg"
+          src="/imahe.webp"
           alt="picture of me ^-^"
         />
         <div className="boxafter shadowcustom">
