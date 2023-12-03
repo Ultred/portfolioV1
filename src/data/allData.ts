@@ -10,7 +10,7 @@ export const projects = [
       external: "https://tentstabulation.com/Home",
       github: "#",
     },
-    imagePath: "/picture/TENTS.webp",
+    imagePath: "/picture/tents.webp",
   },
   {
     id: 2,

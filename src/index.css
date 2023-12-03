@@ -243,6 +243,10 @@ section {
 @media screen and (max-width: 768px) {
   .textmainh1::after {
     width: 40%;
+    right: 10rem;
+  }
+  .textmainh1.right::after {
+    left: 10rem;
   }
 }
 @media screen and (max-width: 400px) {

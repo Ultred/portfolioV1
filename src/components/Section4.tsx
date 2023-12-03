@@ -33,7 +33,7 @@ function Section4() {
       <p className="text-center text-colorYellow-0  font-courierReg text-lg">
         Here are some of the projects I've worked on
       </p>
-      <div className="grid grid-cols-1 lg:grid-cols-2 mt-32  items-center pr-10 border-r-2 border-r-colorYellow-0 border-solid gap-16 lg:gap-28 py-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 mt-32  items-center md:pr-10 md:border-r-2 md:border-r-colorYellow-0 md:border-solid gap-16 lg:gap-28 py-4">
         {projects.map((proj) => (
           <div className="initial-move" id={proj.idName} key={proj.id}>
             <a target="_blank" href={proj.links.external}>
