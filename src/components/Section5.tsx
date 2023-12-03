@@ -23,7 +23,7 @@ function Section5() {
       </div>
       <div className="text-right text-colorWhite-0 ">
         <div className="textmainh1 contact">
-          <h2 className="font-calibreSemBold">Contact Me</h2>
+          <h2 className="font-calibreSemBold font-semibold">Contact Me</h2>
         </div>
         <p className="text-justify font-calibreReg md:text-xl text-base mb-12">
           Hello there! If you believe I'm qualified for the company or have a

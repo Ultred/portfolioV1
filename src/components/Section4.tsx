@@ -27,7 +27,7 @@ function Section4() {
   }, []);
   return (
     <section className="pt-24 " id="projects">
-      <h2 className="font-calibreSemBold  text-colorWhite-0 textmainh1 text-center none">
+      <h2 className="font-calibreSemBold  text-colorWhite-0 textmainh1 text-center font-semibold none">
         Featured Projects
       </h2>
       <p className="text-center text-colorYellow-0  font-courierReg text-lg">
@@ -45,7 +45,7 @@ function Section4() {
                 />
                 <div className="absolute inset-0 bg-colorOverlay-0 opacity-50 hover:opacity-0"></div>
                 <div className="viewmore absolute px-3 gap-3 text-3xl py-[.3rem] text-colorBlack-0 bottom-[2%] right-[2%] bg-colorWhite-0 rounded-md flex items-center">
-                  <p className="uppercase font-calibreMeduim text-base pt-1">
+                  <p className="uppercase font-medium font-calibreMeduim text-base pt-1">
                     Click To View The Website
                   </p>
                   <BiShowAlt />
@@ -53,13 +53,13 @@ function Section4() {
               </div>
             </a>
             <div className="text-colorWhite-0 mt-8 text-right">
-              <h3 className="font-calibreSemBold textmainh1 none">
+              <h3 className="font-calibreSemBold font-semibold textmainh1 none">
                 {proj.title}
               </h3>
               <p className="font-calibreReg md:text-xl text-base">
                 {proj.description}
               </p>
-              <ul className="flex flex-wrap items-center justify-end font-courierItalic text-colorYellow-0 gap-5  my-6">
+              <ul className="flex flex-wrap items-center justify-end font-courierItalic italic text-colorYellow-0 gap-5  my-6">
                 {proj.technologies.map((techuse, index) => (
                   <li key={index}>{techuse}</li>
                 ))}

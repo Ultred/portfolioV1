@@ -26,9 +26,9 @@ function Section2() {
           }}
           className="textmainh1"
         >
-          <h2 className="font-calibreSemBold">Who am I?</h2>
+          <h2 className="font-calibreSemBold font-semibold">Who am I?</h2>
         </div>
-        <p className="text-justify indent-9 font-calibreReg md:text-xl text-base mb-5">
+        <p className="text-justify indent-9 font-calibreReg md:text-xl text-base mb-5 font-normal">
           In my childhood, a curiosity about how computers function ignited my
           journey into the world of technology. Starting from the simple
           intrigue of pressing keys to exploring the settings of various devices
@@ -40,7 +40,7 @@ function Section2() {
           development, with a keen focus on front-end design and responsive
           layout.
         </p>
-        <p className="text-justify my-4 text-colorYellow-0 font-courierItalic  text-sm">
+        <p className="text-justify my-4 text-colorYellow-0 font-courierItalic  text-sm italic">
           In my spare time, you can find me doing this:
         </p>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 font-calibreSemBold md:text-xl text-lg">

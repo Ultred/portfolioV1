@@ -44,11 +44,11 @@ function Section3() {
         />
       </div>
       <div className="textmainh1 right text-colorWhite-0">
-        <h2 className="font-calibreSemBold">My Skills</h2>
+        <h2 className="font-calibreSemBold font-semibold">My Skills</h2>
       </div>
       <div>
         <div className="shadowcustom bordereaze relative md:w-[70%]">
-          <h2 className="absolute font-calibreSemBold text-2xl text-colorWhite-0 bg-colorBlack-0 px-1 top-[-13px] left-[16px]">
+          <h2 className="absolute font-semibold font-calibreSemBold text-2xl text-colorWhite-0 bg-colorBlack-0 px-1 top-[-13px] left-[16px]">
             Front End
           </h2>
           <ul className="text-colorWhite-0 bg-colorBlack-0 items-center  flex flex-wrap md:flex-nowrap font-calibreReg py-[2.5rem]">
@@ -67,7 +67,7 @@ function Section3() {
         </div>
         <div className="flex md:flex-row flex-col items-center mt-9 gap-8">
           <div className="shadowcustom bordereaze relative md:w-[30%] w-full">
-            <h2 className="absolute font-calibreSemBold text-2xl text-colorWhite-0 bg-colorBlack-0 px-1 top-[-13px] left-[16px]">
+            <h2 className="absolute font-semibold font-calibreSemBold text-2xl text-colorWhite-0 bg-colorBlack-0 px-1 top-[-13px] left-[16px]">
               Back End
             </h2>
             <ul className="text-colorWhite-0 bg-colorBlack-0 items-center  flex flex-wrap md:flex-nowrap font-calibreReg py-[2.2rem]">
@@ -85,7 +85,7 @@ function Section3() {
             </ul>
           </div>
           <div className="shadowcustom bordereaze relative md:w-[70%] w-full">
-            <h2 className="absolute font-calibreSemBold text-2xl text-colorWhite-0 bg-colorBlack-0 px-1 top-[-13px] left-[16px]">
+            <h2 className="absolute font-semibold font-calibreSemBold text-2xl text-colorWhite-0 bg-colorBlack-0 px-1 top-[-13px] left-[16px]">
               Others
             </h2>
             <ul className="text-colorWhite-0 bg-colorBlack-0 items-center  flex flex-wrap md:flex-nowrap font-calibreReg py-[2.2rem]">
