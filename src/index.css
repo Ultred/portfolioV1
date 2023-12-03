@@ -232,10 +232,6 @@ section {
   animation: wave 0.5s infinite;
 }
 * {
-  scrollbar-color: #cfca16 #f5f5f5;
-}
-
-* {
   scrollbar-width: thin;
   scrollbar-color: #cfca16 #f5f5f5;
 }
@@ -244,6 +240,9 @@ section {
   .textmainh1::after {
     width: 40%;
     right: 10rem;
+  }
+  .textmainh1.contact::after {
+    right: 10.5rem;
   }
   .textmainh1.right::after {
     left: 10rem;
