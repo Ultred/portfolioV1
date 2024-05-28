@@ -2,6 +2,27 @@
 export const projects = [
   {
     id: 1,
+    idName: "orderuk",
+    title: "Order Uk",
+    description:
+      "A full-stack MERN web application where you can create restaurants and manage their orders with advanced search, filtering, and sorting capabilities.",
+    technologies: [
+      "Tailwind",
+      "TypeScript",
+      "React",
+      "MongoDB",
+      "ExpressJS",
+      "React-Query",
+      "React-HookForm",
+    ],
+    links: {
+      external: "https://orderuk-mern.onrender.com/",
+      github: "#",
+    },
+    imagePath: "/picture/orderUk.png",
+  },
+  {
+    id: 2,
     idName: "tents",
     title: "TENTS",
     description: `Our Capstone Project developed by our team. A website that simplifies event management with efficient result tabulation, customizable event details.                         Use this account: Username: Sample12, Password: Sample123`,
@@ -13,7 +34,7 @@ export const projects = [
     imagePath: "/picture/tents.webp",
   },
   {
-    id: 2,
+    id: 3,
     idName: "coraleccomerce",
     title: "Coral Eccomerce",
     description:
@@ -33,7 +54,7 @@ export const projects = [
     imagePath: "/picture/Coral.webp",
   },
   {
-    id: 3,
+    id: 4,
     idName: "tastequest",
     title: "Taste Quest",
     description:
@@ -46,7 +67,7 @@ export const projects = [
     imagePath: "/picture/Taste Quest.webp",
   },
   {
-    id: 4,
+    id: 5,
     idName: "leftyclone",
     title: "Lefty Clone",
     description:
