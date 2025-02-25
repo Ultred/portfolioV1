@@ -53,7 +53,7 @@ function Section1() {
           Vincent Vinuya
         </h1>
         <h1 className="text-colorgray-0 font-calibreSemBold lg:text-7xl mb-5 md:text-5xl text-3xl  font-semibold">
-          Aspiring Web Developer
+          A Web Developer
         </h1>
         <p className="font-calibreReg md:text-xl text-base w-[16rem] md:w-[27rem] mx-auto text-colorWhite-0 mb-5 mt-8 font-normal">
           I have a passion for turning coffee into code, brewing innovation one
